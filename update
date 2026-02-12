@@ -3,7 +3,7 @@
 set -e  
 #making sure we can properly use sudo
 echo "updating...."
-commit_msg="$1"
+commit_msg=$1
 sudo nixos-rebuild switch --flake .#temporaryOS  --show-trace --print-build-logs --verbose
 
 if [ "$?" -ne 0 ]
