@@ -17,5 +17,6 @@ echo "commiting everything to git"
 sudo git add . 
 gen=$(nixos-rebuild list-generations | grep True|head -c 5 )
 sudo git commit -m "$commit_msg generation: $gen"
-echo "done, gen $gen has been succsessfully commited with commit message:\n \" $commit_msg \n"
+echo "done, gen $gen has been succsessfully commited with commit message:"
+echo "\"$commit_msg\""
 exit
