@@ -13,8 +13,8 @@ fi
   
 
 echo "commiting everything to git"
-git add . 
+sudo git add . 
 gen=$(nixos-rebuild list-generations | grep True|head -c 5 )
-git commit -m "$gen"
+sudo git commit -m "$gen"
 echo "done, gen $gen has been succsessfully commited"
 exit
