@@ -92,7 +92,7 @@
   };
   #setting up openvpn
   services.openvpn.servers = {
-    VPN  = { config = '' config ~/.vpn/VPN.ovpn ''; };
+    VPN  = { config = '' config /home/strats/.vpn/VPN.ovpn ''; };
   };
 
   # Installing programs that need to be installed via program.enable.
