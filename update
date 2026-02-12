@@ -3,6 +3,7 @@
 set -e  
 #making sure we can properly use sudo
 echo "updating...."
+commit_msg="$1"
 sudo nixos-rebuild switch --flake .#temporaryOS  --show-trace --print-build-logs --verbose
 
 if [ "$?" -ne 0 ]
@@ -15,6 +16,6 @@ fi
 echo "commiting everything to git"
 sudo git add . 
 gen=$(nixos-rebuild list-generations | grep True|head -c 5 )
-sudo git commit -m "$gen"
+sudo git commit -m "$commit_msg generation: $gen"
 echo "done, gen $gen has been succsessfully commited"
 exit
