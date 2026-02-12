@@ -3,8 +3,7 @@
 set -e  
 #making sure we can properly use sudo
 echo "updating...."
-#sudo nixos-rebuild switch --flake .#temporaryOS  --show-trace --print-build-logs --verbose
-echo "fake Update"
+sudo nixos-rebuild switch --flake .#temporaryOS  --show-trace --print-build-logs --verbose
 
 if [ "$?" -ne 0 ]
   then echo "exiting because of error during update"
@@ -16,7 +15,6 @@ fi
 echo "commiting everything to git"
 git add . 
 gen=$(nixos-rebuild list-generations | grep True|head -c 5 )
-echo "this is gen $gen "
 git commit -m "$gen"
 echo "done, gen $gen has been succsessfully commited"
 exit
