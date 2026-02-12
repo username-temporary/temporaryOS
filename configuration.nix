@@ -90,9 +90,14 @@
     #  thunderbird
     ];
   };
+  #setting up openvpn
+  services.openvpn.servers = {
+    VPN  = { config = '' config ~/.vpn/VPN.ovpn ''; };
+  };
 
-  # Install firefox.
+  # Installing programs that need to be installed via program.enable.
   programs.firefox.enable = true;
+  
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
