@@ -101,6 +101,8 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+  #enabling opengl
+  hardware.graphics.enable = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
