@@ -5,6 +5,12 @@
     nixpkgs= {
       url="nixpkgs/nixos-25.11";
     };    
+
+    #adding my shell for opengl programs
+    glShell={
+      url="path:/etc/nixos/shells/glShell/";
+      inputs.nixpkgs.follows="nixpkgs";
+    };
   };
   #and here we define how those inputs will be used to create a system
   outputs={self,nixpkgs, ... }@ inputs:
@@ -19,8 +25,7 @@
         system="x86_64-linux";
         modules=[ ./configuration.nix ];
       };
-    devShells."x86_64-linux".default=
-      import ./shells/glShell.nix{inherit pkgs;};
+    devShells."x86_64-linux".default=inputs.glShell.devShells."x86_64-linux".default; 
     };
   #closing outputs
   };

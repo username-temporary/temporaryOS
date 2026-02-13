@@ -1,22 +1,5 @@
 {
   "nodes": {
-    "glShell": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1770970147,
-        "narHash": "sha256-hHesZfgxq+L4fGQPc2bmEA1kXqRCO8ZodKftbdY0cgk=",
-        "path": "/etc/nixos/shells/glShell/",
-        "type": "path"
-      },
-      "original": {
-        "path": "/etc/nixos/shells/glShell/",
-        "type": "path"
-      }
-    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1770770419,
@@ -34,7 +17,6 @@
     },
     "root": {
       "inputs": {
-        "glShell": "glShell",
         "nixpkgs": "nixpkgs"
       }
     }
