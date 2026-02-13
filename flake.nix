@@ -18,12 +18,10 @@
       temporaryOS=lib.nixosSystem{
         system="x86_64-linux";
         modules=[ ./configuration.nix ];
-
-
       };
+    devShells."x86_64-linux".default=
+      import ./shells/glShell.nix{inherit pkgs;};
     };
-
-
   #closing outputs
   };
 }
