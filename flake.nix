@@ -16,6 +16,10 @@
       url =   "github:youwen5/zen-browser-flake" ;
       inputs.nixpkgs.follows="nixpkgs";
     };
+    home-manager={
+      url= "github:nix-community/home-manager";
+      inputs.nixpkgs.follows="nixpkgs";
+    };
   };
   #and here we define how those inputs will be used to create a system
   outputs={self,nixpkgs, ... }@ inputs:
