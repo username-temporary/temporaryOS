@@ -1,7 +1,6 @@
 {config,pkgs,inputs, ...}:
 {
 
-
   # Enable desktop environments.
   services.displayManager.gdm.enable = true;
   services.desktopManager.gnome.enable = true;
