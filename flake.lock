@@ -7,7 +7,7 @@
         ]
       },
       "locked": {
-        "lastModified": 1771072229,
+        "lastModified": 1771097493,
         "narHash": "sha256-DI6k158D3BDdNGnDZTEV4gxPyrnR4bZzB+mwynaO/5o=",
         "path": "/etc/nixos/shells/glShell/",
         "type": "path"
@@ -19,11 +19,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1770770419,
-        "narHash": "sha256-iKZMkr6Cm9JzWlRYW/VPoL0A9jVKtZYiU4zSrVeetIs=",
+        "lastModified": 1771043024,
+        "narHash": "sha256-O1XDr7EWbRp+kHrNNgLWgIrB0/US5wvw9K6RERWAj6I=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "6c5e707c6b5339359a9a9e215c5e66d6d802fd7a",
+        "rev": "3aadb7ca9eac2891d52a9dec199d9580a6e2bf44",
         "type": "github"
       },
       "original": {
@@ -35,7 +35,28 @@
     "root": {
       "inputs": {
         "glShell": "glShell",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "zen-browser": "zen-browser"
+      }
+    },
+    "zen-browser": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1771043662,
+        "narHash": "sha256-GysLqHNtmK4KAn4xF/5KM/riOwT+VPx5l8riiN18H5k=",
+        "owner": "youwen5",
+        "repo": "zen-browser-flake",
+        "rev": "7bb11fb238783853fffeee80c86de2ccabdd0ddc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "youwen5",
+        "repo": "zen-browser-flake",
+        "type": "github"
       }
     }
   },

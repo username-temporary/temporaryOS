@@ -24,6 +24,7 @@
     wget
     kitty
     steam-run
+#    inputs.zen-browser.packages."x86_64-linux".default
   ];
   #this should let us use binaries
   programs.nix-ld.enable=true;
