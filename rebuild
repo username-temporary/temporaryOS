@@ -2,12 +2,12 @@
 
 set -e  
 #making sure we can properly use sudo
-echo "updating...."
+echo "rebuild...."
 commit_msg=$1
 sudo nixos-rebuild switch --flake .#temporaryOS  --show-trace --print-build-logs --verbose
 
 if [ "$?" -ne 0 ]
-  then echo "exiting because of error during update"
+  then echo "exiting because of error during rebuild"
 
   exit
 fi

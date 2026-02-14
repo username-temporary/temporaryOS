@@ -31,6 +31,7 @@
       LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath runtimeLibs;
 
       shellHook = ''
+        export PS1="${PS1}\[\e[92m\]|glShell|\$\[\e[0m\]"
         echo "development environment created"
       '';
     };
