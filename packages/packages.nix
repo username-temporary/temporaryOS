@@ -2,6 +2,10 @@
 {
 
 
+  # Enable desktop environments.
+  services.displayManager.gdm.enable = true;
+  services.desktopManager.gnome.enable = true;
+  programs.hyprland.enable= true;
 
   # Installing programs that need to be installed via program.enable.
   programs.firefox.enable = true;
