@@ -25,8 +25,8 @@
         system="x86_64-linux";
         modules=[ ./configuration.nix ];
       };
-    devShells."x86_64-linux".default=inputs.glShell.devShells."x86_64-linux".default; 
     };
+    devShells."x86_64-linux".default=inputs.glShell.devShells."x86_64-linux".default; 
   #closing outputs
   };
 }
