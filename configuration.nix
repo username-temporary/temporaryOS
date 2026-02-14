@@ -14,12 +14,12 @@
     ];
 
   #"pointing" home manager to the file where we will actually configure home-manager
-#  home-manager={
-#    extraSpecialArgs={inherit inputs;};
-#    users={
-#      strats= import ./home/home.nix;
-#    };
-#  };
+  home-manager={
+    extraSpecialArgs={inherit inputs;};
+    users={
+      strats= import ./home.nix;
+    };
+  };
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
