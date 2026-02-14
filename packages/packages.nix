@@ -1,4 +1,4 @@
-{config,pkgs, ...}:
+{config,pkgs,inputs, ...}:
 {
 
 
@@ -42,7 +42,10 @@
     VPN  = { config = ''config /home/strats/.vpn/VPN.ovpn''; };
   };
 
-
+  users.users.strats.packages =  [
+    #  thunderbird
+    inputs.zen-browser.packages."x86_64-linux".default
+    ];
 
 
 

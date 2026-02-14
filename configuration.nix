@@ -84,10 +84,6 @@
     isNormalUser = true;
     description = "username-temporary";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages =  [
-    #  thunderbird
-    inputs.zen-browser.packages."x86_64-linux".default
-    ];
   };
  
 
