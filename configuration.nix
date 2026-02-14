@@ -8,6 +8,8 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      #includes all of our packages
+      ./packages/packages.nix
     ];
 
   # Bootloader.
@@ -90,40 +92,7 @@
     #  thunderbird
     ];
   };
-  #setting up openvpn
-  services.openvpn.servers = {
-    VPN  = { config = ''config /home/strats/.vpn/VPN.ovpn''; };
-  };
-
-  # Installing programs that need to be installed via program.enable.
-  programs.firefox.enable = true;
-  
-
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
-  #enabling opengl
-  hardware.graphics.enable = true;
-
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
-  environment.systemPackages = with pkgs; [
-    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    git 
-    wget
-    kitty
-    steam-run
-  ];
-  #this should let us use binaries
-  programs.nix-ld.enable=true;
-  programs.nix-ld.libraries=with pkgs;[
-    #put libraries here I guess
-      bash
-      alsa-lib
-      at-spi2-atk
-      at-spi2-core
-      atk
-      cairo
-  ];
+ 
 
   # setting up flakes
   nix.settings.experimental-features=["nix-command" "flakes"];

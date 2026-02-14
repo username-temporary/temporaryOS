@@ -7,8 +7,8 @@
         ]
       },
       "locked": {
-        "lastModified": 1770970147,
-        "narHash": "sha256-hHesZfgxq+L4fGQPc2bmEA1kXqRCO8ZodKftbdY0cgk=",
+        "lastModified": 1771072229,
+        "narHash": "sha256-DI6k158D3BDdNGnDZTEV4gxPyrnR4bZzB+mwynaO/5o=",
         "path": "/etc/nixos/shells/glShell/",
         "type": "path"
       },
