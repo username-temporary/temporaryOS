@@ -6,8 +6,6 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-      #includes all of our packages
       ./packages/packages.nix
       #including home manager
       inputs.home-manager.nixosModules.default

@@ -33,7 +33,7 @@
       temporaryOS=lib.nixosSystem{
         specialArgs={inherit inputs;};
         system="x86_64-linux";
-        modules=[ ./configuration.nix ];
+        modules=[ ./configuration.nix ./hardware/laptop.nix];
       };
     };
     devShells."x86_64-linux".glShell=inputs.glShell.devShells."x86_64-linux".default; 
