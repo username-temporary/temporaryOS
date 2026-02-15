@@ -36,6 +36,7 @@
       at-spi2-core
       atk
       cairo
+      waybar
   ];
   #setting up openvpn
   services.openvpn.servers = {
