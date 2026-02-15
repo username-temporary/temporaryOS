@@ -38,6 +38,8 @@
       atk
       cairo
   ];
+  #picking a font
+  fonts.packages=[ pkgs.nerd-fonts.fira-mono];
   #setting up openvpn
   services.openvpn.servers = {
     VPN  = { config = ''config /home/strats/.vpn/VPN.ovpn''; };
