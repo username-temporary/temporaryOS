@@ -84,6 +84,8 @@
     # no need to redefine it in your config for now)
     #media-session.enable = true;
   };
+  xdg.portal.enable=true;
+  xdg.portal.extraPortals=  [pkgs.xdg-desktop-portal-gnome ];
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
