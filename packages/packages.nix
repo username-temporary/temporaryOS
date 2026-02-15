@@ -23,6 +23,7 @@
     wget
     kitty
     steam-run
+    wofi
 #    inputs.zen-browser.packages."x86_64-linux".default
   ];
   #this should let us use binaries
