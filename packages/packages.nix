@@ -8,6 +8,7 @@
 
   # Installing programs that need to be installed via program.enable.
   programs.firefox.enable = true;
+  programs.waybar.enable=true;
  
 
   # Allow unfree packages
@@ -36,7 +37,6 @@
       at-spi2-core
       atk
       cairo
-      waybar
   ];
   #setting up openvpn
   services.openvpn.servers = {
