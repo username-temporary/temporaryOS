@@ -39,7 +39,7 @@
   programs.bash={
     enable=true;
     initExtra=''
-    export PS1='\[\e[96;1m\]|\[\e]0;\u@\h: \w\a\]\u@:\[\e[22m\]\W\[\e[1m\]|\$\a\[\e[0m\]' \n
+    export PS1='\[\e[96;1m\]|\[\e]0;\u@\h: \w\a\]\u@:\[\e[22m\]\W\[\e[1m\]|\$\[\e[0m\]' \n
     '';
   };
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
