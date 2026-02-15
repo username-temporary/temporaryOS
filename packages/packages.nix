@@ -37,6 +37,7 @@
       at-spi2-core
       atk
       cairo
+      apple-cursor
   ];
   #picking a font
   fonts.packages=[ pkgs.nerd-fonts.fira-mono];
