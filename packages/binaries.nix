@@ -22,9 +22,11 @@
       util-linux
       xz
       systemd
-      
-      # My own additions
+      #extras from me :
       glfw
+      glfw3
+      
+      # nixos wiki additions:
       xorg.libXcomposite
       xorg.libXtst
       xorg.libXrandr
