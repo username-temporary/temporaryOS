@@ -27,18 +27,7 @@
     wofi
 #    inputs.zen-browser.packages."x86_64-linux".default
   ];
-  #this should let us use binaries
-  programs.nix-ld.enable=true;
-  programs.nix-ld.libraries=with pkgs;[
-    #put libraries here I guess
-      bash
-      alsa-lib
-      at-spi2-atk
-      at-spi2-core
-      atk
-      cairo
-      apple-cursor
-  ];
+  
   #picking a font
   fonts.packages=[ pkgs.nerd-fonts.fira-mono];
   #setting up openvpn
