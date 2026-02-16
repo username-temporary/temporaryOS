@@ -2,5 +2,4 @@
 echo "connecting flatpak to flathub if it is not already connected"
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 echo "installing programs"
-flatpak install flathub org.localsend.localsend_app
 
