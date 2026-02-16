@@ -36,6 +36,7 @@
     swaynotificationcenter
     libnotify
     hyprpaper
+    localsend
   ];
   
   #picking a font
