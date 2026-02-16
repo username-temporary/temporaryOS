@@ -30,6 +30,8 @@
     cmake
     pkg-config
     mesa-demos
+    grim
+    satty
   ];
   
   #picking a font
