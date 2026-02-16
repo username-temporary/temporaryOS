@@ -33,6 +33,7 @@
     grim
     satty
     wl-clipboard-rs
+    swaynotificationcenter
   ];
   
   #picking a font
