@@ -48,6 +48,8 @@
   # plain files is through 'home.file'.
   home.file = {
     ".config/hypr/hyprland.conf".source=./home/hyprland.conf;
+    ".config/waybar/config.jsonc".source=./home/waybar/config.jsonc;
+    ".config/waybar/style.css".source=./home/waybar/style.css;
     # # Building this configuration will create a copy of 'dotfiles/screenrc' in
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
     # # symlink to the Nix store copy.
