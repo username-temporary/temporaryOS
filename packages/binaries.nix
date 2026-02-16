@@ -24,6 +24,7 @@
       systemd
       
       # My own additions
+      glfw
       xorg.libXcomposite
       xorg.libXtst
       xorg.libXrandr
