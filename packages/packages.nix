@@ -35,6 +35,7 @@
     wl-clipboard-rs
     swaynotificationcenter
     libnotify
+    hyprpaper
   ];
   
   #picking a font
