@@ -26,6 +26,7 @@
     steam-run
     wofi
 #    inputs.zen-browser.packages."x86_64-linux".default
+    gnumake
     cmake
     pkg-config
     mesa-demos
