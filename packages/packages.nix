@@ -26,6 +26,9 @@
     steam-run
     wofi
 #    inputs.zen-browser.packages."x86_64-linux".default
+    cmake
+    pkg-config
+    mesa-demos
   ];
   
   #picking a font

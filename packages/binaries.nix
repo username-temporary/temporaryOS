@@ -23,6 +23,8 @@
       xz
       systemd
       #extras from me :
+      mesa
+      wayland
       glfw
       glfw3
       
