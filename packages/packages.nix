@@ -34,6 +34,7 @@
     satty
     wl-clipboard-rs
     swaynotificationcenter
+    libnotify
   ];
   
   #picking a font
