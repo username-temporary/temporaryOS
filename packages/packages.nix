@@ -32,6 +32,7 @@
     mesa-demos
     grim
     satty
+    wl-clipboard-rs
   ];
   
   #picking a font
