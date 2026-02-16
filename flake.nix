@@ -11,6 +11,10 @@
       url="path:/etc/nixos/shells/glShell/";
       inputs.nixpkgs.follows="nixpkgs";
     };
+     defaultShell={
+      url="path:/etc/nixos/shells/default/";
+      inputs.nixpkgs.follows="nixpkgs";
+    };   
     zen-browser={
 
       url =   "github:youwen5/zen-browser-flake" ;
@@ -37,6 +41,7 @@
       };
     };
     devShells."x86_64-linux".glShell=inputs.glShell.devShells."x86_64-linux".default; 
+    devShells."x86_64-linux".defautl=inputs.defaultShell.devShells."x86_64-linux".default; 
   #closing outputs
   };
 }
