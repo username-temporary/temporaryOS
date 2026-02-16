@@ -36,6 +36,7 @@
     swaynotificationcenter
     libnotify
     hyprpaper
+    flatpak
     localsend
   ];
   
