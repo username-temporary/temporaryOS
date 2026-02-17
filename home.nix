@@ -46,7 +46,8 @@
     '';
     };
     kitty.settings={
-      background_opacity = 0.9;
+      enable=true;
+      background_opacity = "0.9";
     };
  };
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
