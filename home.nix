@@ -51,7 +51,7 @@
 
       settings={
         dynamic_background_opacity= "no";
-        background_opacity = "0.7";
+        background_opacity = "0.75";
       };
     };
  };
