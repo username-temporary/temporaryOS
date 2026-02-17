@@ -43,6 +43,7 @@
     enable=true;
     initExtra=''
     export PS1='\[\e[96;1m\]|\[\e]0;\u@\h: \w\a\]\u@:\[\e[22m\]\W\[\e[1m\]|\$\[\e[0m\]' \n
+    fastfetch \n
     '';
     };
     
@@ -52,6 +53,7 @@
       settings={
         dynamic_background_opacity= "no";
         background_opacity = "0.75";
+        background_blur="1";
       };
     };
  };
