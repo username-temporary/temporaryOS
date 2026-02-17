@@ -47,6 +47,7 @@
     };
     kitty.settings={
       enable=true;
+      dynamic_background_opacity= "no";
       background_opacity = "0.9";
     };
  };
