@@ -45,10 +45,14 @@
     export PS1='\[\e[96;1m\]|\[\e]0;\u@\h: \w\a\]\u@:\[\e[22m\]\W\[\e[1m\]|\$\[\e[0m\]' \n
     '';
     };
-    kitty.settings={
+    
+    kitty={
       enable=true;
-      dynamic_background_opacity= "no";
-      background_opacity = "0.9";
+
+      settings={
+        dynamic_background_opacity= "no";
+        background_opacity = "0.9";
+      };
     };
  };
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
