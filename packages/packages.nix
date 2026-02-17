@@ -37,6 +37,7 @@
     libnotify
     hyprpaper
     localsend
+    python3
   ];
   
   #picking a font
