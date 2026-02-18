@@ -42,6 +42,10 @@
     hyprpaper
     localsend
     python3
+    curl
+    unzip
+    gnutar
+    gzip
   ];
   
   #picking a font
