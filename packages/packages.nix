@@ -7,8 +7,11 @@
   programs.hyprland.enable= true;
 
   # Installing programs that need to be installed via program.enable.
-  programs.firefox.enable = true;
-  programs.waybar.enable=true;
+  programs={
+    firefox.enable = true;
+    waybar.enable=true;
+    neovim.enable=true;
+  };
 
   services.flatpak.enable = true; 
 
@@ -18,9 +21,9 @@
   hardware.graphics.enable = true;
   # List packages installed in system profile. To search, run:
   # $ nix search wget
+
   environment.systemPackages = with pkgs; [
     vim 
-    neovim
     git 
     wget
     kitty
