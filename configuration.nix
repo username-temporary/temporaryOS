@@ -130,6 +130,7 @@
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "25.11"; # Did you read the comment?
 ### sad attempt at fixing the wifi
+  systemd.services.wpa_supplicant.enable=true;
   systemd.services.wpa_supplicant.environment.OPENSSL_CONF = pkgs.writeText"openssl.cnf"''
 openssl_conf = openssl_init
 [openssl_init]
