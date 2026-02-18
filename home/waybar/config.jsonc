@@ -92,7 +92,7 @@
    },
    "backlight": {
        // "device": "acpi_video1",
-       "format": "{percent}% {icon}",
+       "format": "{icon} {percent}%",
        "format-icons": ["", "", "", "", "", "", "", "", ""]
    },
    "battery": { 
@@ -101,10 +101,10 @@
            "warning": 30, 
            "critical": 15 
        }, 
-       "format": "{capacity}% {icon}", 
-       "format-full": "{capacity}% {icon}", 
-       "format-charging": "{capacity}% ", 
-       "format-plugged": "{capacity}% ", 
+       "format": "{icon} {capacity}%", 
+       "format-full": "{icon}{capacity}%", 
+       "format-charging": " {capacity}%", 
+       "format-plugged": " {capacity}%", 
        "format-alt": "{time} {icon}", 
        // "format-good": "", // An empty format will hide the module 
        // "format-full": "", 
@@ -126,12 +126,13 @@
      },
    "network": {
          // "interface": "wlp2*", // (Optional) To force the use of this interface
-         "format-wifi": "{ipaddr}",
-         "format-ethernet": "{ipaddr}/{cidr} E",
-         "tooltip-format": "{ifname} via {gwaddr} ",
-         "format-linked": "{ifname} (No IP) ",
-         "format-disconnected": "Disconnected ⚠",
-         "format-alt": "{ifname}: {ipaddr}/{cidr}"
+         "format-wifi": "  {essid}",
+         "format-ethernet": "E{ipaddr}/{cidr} ",
+         "tooltip-format": "{ifname} via {gwaddr} ",
+         "format-linked": "{ifname} (No IP) ",
+         "format-disconnected": "⚠Disconnected ",
+         "format-alt": "{ifname}: {ipaddr}/{cidr}",
+         "max-length": 13
      },
   "cpu": {
     "format": " {usage}%",
