@@ -9,6 +9,7 @@
   # Installing programs that need to be installed via program.enable.
   programs.firefox.enable = true;
   programs.waybar.enable=true;
+
   services.flatpak.enable = true; 
 
   # Allow unfree packages
@@ -22,8 +23,10 @@
     git 
     wget
     kitty
-    steam-run
+#app launchers 
+    rofi
     wofi
+    steam-run
 #    inputs.zen-browser.packages."x86_64-linux".default
     gnumake
     fastfetch
