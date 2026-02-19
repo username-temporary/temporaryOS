@@ -48,7 +48,7 @@
       glShell=inputs.glShell.devShells."x86_64-linux".default; 
       default=inputs.defaultShell.devShells."x86_64-linux".default; 
     };
-    package."x86_64-linux".default=
+    packages."x86_64-linux".default=
       (inputs.nvf.lib.neovimConfiguration{
         pkgs=nixpkgs.legacyPackages.x86_64-linux;
         modules=[
