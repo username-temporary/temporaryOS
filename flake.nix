@@ -24,6 +24,10 @@
       url= "github:nix-community/home-manager";
       inputs.nixpkgs.follows="nixpkgs";
     };
+    nvf={
+      url="github:notashelf/nvf";
+      inputs.nixpkgs.follows="nixpkgs";
+    };
   };
   #and here we define how those inputs will be used to create a system
   outputs={self,nixpkgs, ... }@ inputs:
@@ -40,8 +44,20 @@
         modules=[ ./configuration.nix ./hardware/laptop.nix];
       };
     };
-    devShells."x86_64-linux".glShell=inputs.glShell.devShells."x86_64-linux".default; 
-    devShells."x86_64-linux".defautl=inputs.defaultShell.devShells."x86_64-linux".default; 
+    devShells."x86_64-linux"={
+      glShell=inputs.glShell.devShells."x86_64-linux".default; 
+      default=inputs.defaultShell.devShells."x86_64-linux".default; 
+    };
+    package."x86_64-linux".default=
+      (inputs.nvf.lib.neovimConfiguration{
+        pkgs=nixpkgs.legacyPackages.x86_64-linux;
+        modules=[
+        ./nvim/config.nix
+        inputs.nvf.nixosModules.default
+
+        ];
+      }).neovim; 
+    
   #closing outputs
   };
 }
