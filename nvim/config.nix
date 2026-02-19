@@ -4,14 +4,15 @@
     enable=true;
     settings.vim={
 
-#     statusline.lualine.enable = true;
-#     telescope.enable = true;
-#     lsp.enable=true;
+     statusline.lualine.enable = true;
+     telescope.enable = true;
+     lsp.enable=true;
       languages={
         enableTreesitter = true;
         nix.enable = true;
        
       };
+     treesitter.indent.enable=false;
       options = {
         tabstop = 2;
         shiftwidth = 2;
