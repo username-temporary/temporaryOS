@@ -6,6 +6,8 @@
       statusline.lualine.enable=true;
       telescope.enable=true;
       options = {
+        autoindent=true;
+        smartindent=true;
         tabstop = 2;
         shiftwidth = 2;
         softtabstop = 2;
