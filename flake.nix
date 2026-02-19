@@ -51,9 +51,7 @@
     packages."x86_64-linux".nvim =
       (inputs.nvf.lib.neovimConfiguration{
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
-        modules = [
-        ./nvim/config.nix
-        inputs.nvf.nixosModules.default];
+        modules = [ ./nvim/config.nix];
       }).neovim; 
     
   #closing outputs
