@@ -48,14 +48,12 @@
       glShell=inputs.glShell.devShells."x86_64-linux".default; 
       default=inputs.defaultShell.devShells."x86_64-linux".default; 
     };
-    packages."x86_64-linux".default=
+    packages."x86_64-linux".nvim =
       (inputs.nvf.lib.neovimConfiguration{
-        pkgs=nixpkgs.legacyPackages.x86_64-linux;
-        modules=[
+        pkgs = nixpkgs.legacyPackages.x86_64-linux;
+        modules = [
         ./nvim/config.nix
-        inputs.nvf.nixosModules.default
-
-        ];
+        inputs.nvf.nixosModules.default];
       }).neovim; 
     
   #closing outputs
