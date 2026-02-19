@@ -7,11 +7,11 @@
 #     statusline.lualine.enable = true;
 #     telescope.enable = true;
 #     lsp.enable=true;
-#     languages={
-#       enableTreesitter = true;
-#       nix.enable = true;
-#       
-#     };
+      languages={
+        enableTreesitter = true;
+        nix.enable = true;
+       
+      };
       options = {
         tabstop = 2;
         shiftwidth = 2;
