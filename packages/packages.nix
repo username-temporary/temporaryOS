@@ -19,10 +19,14 @@
   nixpkgs.config.allowUnfree = true;
   #enabling opengl
   hardware.graphics.enable = true;
+  #nessisary for distrobox
+  virtualisation.podman = {
+    enable = true;
+    dockerCompat = true;
+  };
+  environment.systemPackages = with pkgs; [
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-
-  environment.systemPackages = with pkgs; [
     vim 
     git 
     wget
@@ -49,6 +53,7 @@
     unzip
     gnutar
     gzip
+    distrobox
   ];
   
   #picking a font
