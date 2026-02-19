@@ -8,6 +8,7 @@
       options = {
         autoindent=true;
         smartindent=true;
+
         tabstop = 2;
         shiftwidth = 2;
         softtabstop = 2;
@@ -19,8 +20,7 @@
         nix.enable=true;
         
       };
-   
+ 
     };
-
   };
 }
