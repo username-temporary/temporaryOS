@@ -44,7 +44,7 @@
     initExtra=''
     export PS1='\[\e[96;1m\]|\[\e]0;\u@\h: \w\a\]\u@:\[\e[22m\]\W\[\e[1m\]|\$\[\e[0m\]' 
     fastfetch 
-    alias vi =nix run /etc/nixos#nvim
+    alias vi=nix run /etc/nixos#nvim
     '';
     };
     
