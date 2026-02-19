@@ -1,17 +1,19 @@
-{pkgs,lib,...}:
+{pkgs,lib,inputs,...}:
 {
-  vim={
-    statusline.lualine.enable=true;
-    telescope.enable=true;
- 
-    
-    lsp.enable=true;
-    languages={
-      enableTreesitter=true;
-      nix.enable=true;
-      
+  programs.nvf={
+    settings.vim={
+#     statusline.lualine.enable=true;
+#     telescope.enable=true;
+#  
+#     
+#     lsp.enable=true;
+#     languages={
+#       enableTreesitter=true;
+#       nix.enable=true;
+#       
+#     };
+#  
     };
- 
- };
 
+  };
 }

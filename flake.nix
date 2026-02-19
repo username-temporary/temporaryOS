@@ -41,7 +41,11 @@
       temporaryOS=lib.nixosSystem{
         specialArgs={inherit inputs;};
         system="x86_64-linux";
-        modules=[ ./configuration.nix ./hardware/laptop.nix];
+        modules=[
+        inputs.nvf.nixosModules.default
+        ./nvim/config.nix 
+        ./configuration.nix 
+        ./hardware/laptop.nix];
       };
     };
     devShells."x86_64-linux"={
