@@ -3,17 +3,17 @@
   programs.nvf={
     enable=true;
     settings.vim={
-      statusline.lualine.enable = true;
-      telescope.enable = true;
       options = {
-        autoindent = true;
-        smartindent = true;
-
-        tabstop = 2;
+         tabstop = 2;
         shiftwidth = 2;
         softtabstop = 2;
         expandtab = true;
-      };
+
+        autoindent = true;
+        smartindent = true;
+     };
+      statusline.lualine.enable = true;
+      telescope.enable = true;
       lsp.enable=true;
       languages={
         enableTreesitter = true;
