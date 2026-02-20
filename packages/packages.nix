@@ -14,7 +14,7 @@
   };
 
   services.flatpak.enable = true; 
-
+  security.polkit.enable =true;
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
   #enabling opengl
