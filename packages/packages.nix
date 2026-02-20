@@ -31,6 +31,7 @@
     git 
     wget
     kitty
+    nwg-look
     wofi
     steam-run
 #    inputs.zen-browser.packages."x86_64-linux".default
