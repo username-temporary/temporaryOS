@@ -31,8 +31,6 @@
     git 
     wget
     kitty
-#app launchers 
-    rofi
     wofi
     steam-run
 #    inputs.zen-browser.packages."x86_64-linux".default
@@ -54,6 +52,7 @@
     gnutar
     gzip
     distrobox
+    rpi-imager
   ];
   
   #picking a font
