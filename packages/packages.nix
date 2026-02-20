@@ -40,6 +40,7 @@
     pkg-config
     mesa-demos
     grim
+    hyprpolkitagent
     satty
     wl-clipboard-rs
     swaynotificationcenter
