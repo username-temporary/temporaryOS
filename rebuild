@@ -3,9 +3,13 @@
 set -e  
 #making sure we can properly use sudo
 echo "rebuild...."
-commit_msg=$1
-sudo nixos-rebuild switch --flake .#temporaryOS  --show-trace --print-build-logs --verbose
-
+platform=$1
+commit_msg=$2
+if [ "$platform" == "-d" ] 
+then	echo "desktop-rebuild" 
+	sudo nixos-rebuild switch --flake .#temporaryOSDesktop  --show-trace --print-build-logs --verbose
+else sudo nixos-rebuild switch --flake .#temporaryOS  --show-trace --print-build-logs --verbose
+fi
 if [ "$?" -ne 0 ]
   then echo "exiting because of error during rebuild"
 
