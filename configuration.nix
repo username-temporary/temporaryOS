@@ -8,8 +8,11 @@
     [ # Include the results of the hardware scan.
       ./packages/packages.nix
       ./packages/binaries.nix
+      ./nvim/config.nix 
       #including home manager
       inputs.home-manager.nixosModules.default
+      inputs.nvf.nixosModules.default
+
     ];
 
   #"pointing" home manager to the file where we will actually configure home-manager

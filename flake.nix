@@ -51,7 +51,6 @@
         specialArgs={inherit inputs;};
         system="x86_64-linux";
         modules=[
-        inputs.nvf.nixosModules.default
         ./nvim/config.nix 
         ./configuration.nix 
         ./hardware/desktop.nix];
