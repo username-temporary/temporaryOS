@@ -41,7 +41,7 @@
       temporaryOS=lib.nixosSystem{
         specialArgs={inherit inputs;};
         system="x86_64-linux";
-        modules=[
+        modules=[ 
         inputs.nvf.nixosModules.default
         ./nvim/config.nix 
         ./configuration.nix 
@@ -61,11 +61,11 @@
       glShell=inputs.glShell.devShells."x86_64-linux".default; 
       default=inputs.defaultShell.devShells."x86_64-linux".default; 
     };
-    packages."x86_64-linux".nvim =
-      (inputs.nvf.lib.neovimConfiguration{
-        pkgs = nixpkgs.legacyPackages.x86_64-linux;
-        modules = [ ./nvim/config.nix];
-      }).neovim; 
+ #  packages."x86_64-linux".nvim =
+ #    (inputs.nvf.lib.neovimConfiguration{
+ #      pkgs = nixpkgs.legacyPackages.x86_64-linux;
+ #      modules = [ ./nvim/config.nix];
+ #    }).neovim; 
     
   #closing outputs
   };
