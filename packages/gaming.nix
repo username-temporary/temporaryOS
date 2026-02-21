@@ -2,6 +2,7 @@
 {
   programs.steam.enable=true;
   programs.steam.protontricks.enable=true;
+  programs.gamemode.enable = true;
 #I will add any packages I need for gaming here I just can't  think of any right now :/
   environment.systemPackages= with pkgs;[
 
