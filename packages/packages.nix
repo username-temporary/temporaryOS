@@ -27,6 +27,7 @@
   environment.systemPackages = with pkgs; [
   # List packages installed in system profile. To search, run:
   # $ nix search wget
+    htop
     texliveFull
     zathura
     vim 
