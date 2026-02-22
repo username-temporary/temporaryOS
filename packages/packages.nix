@@ -28,6 +28,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
     texliveFull
+    zathura
     vim 
     git 
     wget
