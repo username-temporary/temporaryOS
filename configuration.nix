@@ -152,5 +152,8 @@ Options = UnsafeLegacyRenegotiation
 CipherString = Default:@SECLEVEL=0
 ''
 ;
+##razer mouse settings
+hardware.openrazer.enable = true;
+hardware.openrazer.users = ["strats"];
 
 }

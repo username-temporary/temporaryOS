@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "setting up latexmk"
-latexmk -pvc -silent -xelatex test.tex &
+latexmk -pvc -silent -xelatex $1.tex &
 echo "setting up pdf viewer zathura"
 zathura $1.pdf &
 
