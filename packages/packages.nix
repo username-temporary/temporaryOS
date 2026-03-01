@@ -27,7 +27,6 @@
   environment.systemPackages = with pkgs; [
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-    pulseaudio
     htop
     texliveFull
     zathura
@@ -59,6 +58,9 @@
     gzip
     distrobox
     rpi-imager
+#audio
+    helvum
+    pulseaudio
   ];
   
   #picking a font
