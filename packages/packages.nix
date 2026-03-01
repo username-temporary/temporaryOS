@@ -59,6 +59,7 @@
     distrobox
     rpi-imager
 #audio
+    pavucontrol
     helvum
     pulseaudio
   ];
