@@ -58,7 +58,7 @@
     gzip
     distrobox
     rpi-imager
-    rnote
+    krita
   ];
   
   #picking a font
