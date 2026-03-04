@@ -58,6 +58,7 @@
     gzip
     distrobox
     rpi-imager
+    rnote
   ];
   
   #picking a font
