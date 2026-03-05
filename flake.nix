@@ -43,6 +43,7 @@
         system="x86_64-linux";
         modules=[ 
           ./configuration.nix 
+          ./packages/gaming.nix
           ./hardware/laptop.nix];
       };
       temporaryOSDesktop=lib.nixosSystem{
