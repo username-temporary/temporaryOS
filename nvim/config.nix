@@ -12,6 +12,7 @@
       languages={
         enableTreesitter = true;
         nix.enable = true;
+        clang.lsp.enable=true;
        
       };
      treesitter.indent.enable=false;
