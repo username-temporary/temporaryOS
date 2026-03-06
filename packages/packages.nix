@@ -11,6 +11,7 @@
     firefox.enable = true;
     waybar.enable=true;
     neovim.enable=true;
+    firejail.enable=true;
   };
 
   services.flatpak.enable = true; 
@@ -65,6 +66,7 @@
   #drawing
     krita
   ];
+  
   
   #picking a font
   fonts.packages=[ pkgs.nerd-fonts.fira-mono];
