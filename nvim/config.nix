@@ -12,7 +12,11 @@
       languages={
         enableTreesitter = true;
         nix.enable = true;
-        clang.lsp.enable=true;
+        clang={
+         enable=true; 
+         lsp.enable=true;
+        };
+
        
       };
      treesitter.indent.enable=false;
