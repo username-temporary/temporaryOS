@@ -58,10 +58,12 @@
     gzip
     distrobox
     rpi-imager
-#audio
+  #audio
     pavucontrol
     helvum
     pulseaudio
+  #drawing
+    krita
   ];
   
   #picking a font
