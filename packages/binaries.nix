@@ -24,6 +24,7 @@
       systemd
       #extras from me :
       mesa
+      wayland-scanner
       wayland
       glfw
       glfw3
