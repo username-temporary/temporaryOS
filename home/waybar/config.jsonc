@@ -116,10 +116,10 @@
    }, 
    "custom/vpn-toggle":{
      //"format":"{icon}",
-     "exec":"etc/nixos/home/waybar/vpn-status.sh",
+     "exec":"/etc/nixos/home/waybar/vpn-status.sh",
      "return-type":"json",
      "interval":1,
-     "on-click":"etc/nixos/home/waybar/vpn-toggle.sh",
+     "on-click":"/etc/nixos/home/waybar/vpn-toggle.sh",
    },
    "power-profiles-daemon": { 
      "format": "{icon}", 
