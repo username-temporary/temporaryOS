@@ -14,11 +14,11 @@
     "clock",
     "tray",
     "network",
+    "custom/vpn-toggle",
 
   ],
   "modules-right": [
     "temperature",
-    "custom/vpn-toggle",
     "cpu",
     "memory",
     "backlight",
