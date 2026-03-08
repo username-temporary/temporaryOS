@@ -42,6 +42,7 @@ window#waybar {
   background-color: #1e1e2e;
   color: #f38ba8;
 }
+#custom-vpn-toggle,
 #temperature,
 #battery.critical:not(.charging), 
 #battery.warning, 
@@ -66,6 +67,12 @@ window#waybar {
   border-radius: 6px;
   /* background-color: #181825; */
   background-color: #1e1e2e;
+}
+#custom-vpn-toggle.inactive{
+  color:#f05050
+}
+#custom-vpn-toggle.active{
+  color:#50a050
 }
 
 #mpris.playing {

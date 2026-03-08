@@ -18,6 +18,7 @@
   ],
   "modules-right": [
     "temperature",
+    "custom/vpn-toggle",
     "cpu",
     "memory",
     "backlight",
@@ -113,6 +114,13 @@
    "battery#bat2": { 
        "bat": "BAT2" 
    }, 
+   "custom/vpn-toggle":{
+     //"format":"{icon}",
+     "exec":"./vpn-status.sh",
+     "return-type":"json",
+     "interval":1,
+     "on-click":"./vpn-toggle.sh",
+   },
    "power-profiles-daemon": { 
      "format": "{icon}", 
      "tooltip-format": "Power profile: {profile}\nDriver: {driver}", 
