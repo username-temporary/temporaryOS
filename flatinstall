@@ -4,4 +4,5 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 echo "installing programs "
 flatpak install flathub org.vinegarhq.Sober
 flatpak install flathub xyz.z3ntu.razergenie
-
+flatpak install flathub org.prismlauncher.PrismLauncher
+echo "done"
